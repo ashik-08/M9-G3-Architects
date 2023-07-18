@@ -70,10 +70,11 @@ nav a {
   margin-top: 50px;
   width: 100%;
 }
+
 /* main section styles */
 
 main {
-  max-width: 1440px;
+  max-width: 75%;
   margin: 0 auto;
 }
 
@@ -82,15 +83,14 @@ main {
 .teams-container {
   display: flex;
   align-items: center;
-  margin-top: 85px;
+  justify-content: center;
+  gap: 75px;
+  margin: 85px 0px 130px;
 }
 .teams-img-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-}
-.teams-content {
-  margin-left: 75px;
 }
 .teams-title {
   font-size: 2.8125rem;
