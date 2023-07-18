@@ -46,6 +46,21 @@
     flex-direction: column;
     gap: 50px;
   }
+
+  /* features related styles */
+
+  .features {
+    flex-direction: column;
+  }
+  .feature-img img {
+    width: 100%;
+  }
+  .experience-badge {
+    width: 280px;
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 /* tablet or medium devices */
@@ -94,5 +109,17 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+
+  /* features related styles */
+
+  .features {
+    flex-direction: column;
+  }
+  .feature-img img {
+    width: 100%;
+  }
+  .experience-badge {
+    width: 280px;
   }
 }
