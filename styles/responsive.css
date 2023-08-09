@@ -1,9 +1,10 @@
 /* mobile or smaller devices */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 640px) {
+
   /* header section styles */
 
   header {
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   /* nav related styles */
@@ -11,18 +12,27 @@
   nav {
     flex-direction: column;
   }
+  .nav-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
   nav > ul {
     flex-direction: column;
-    align-items: center;
-  }
-  .nav-title {
-    margin-bottom: 30px;
+    gap: 30px;
+    padding: 0px;
   }
 
   /* banner related styles */
 
   .banner-title {
-    margin-top: 50px;
+    font-size: 3.5rem;
+  }
+
+  /* main section styles */
+
+  main,
+  footer {
+    width: 100%;
   }
 
   /* teams section styles */
@@ -33,43 +43,63 @@
   .teams-img-container {
     grid-template-columns: 1fr;
   }
-
-  /* facts related styles */
-
-  .facts-card-container {
-    flex-direction: column;
+  .teams-img-container img {
+    width: 100%;
   }
 
-  /* sponsors related styles */
-
-  .sponsors-img-container {
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  /* features related styles */
+  /* features section styles */
 
   .features {
+    margin-bottom: 70px;
     flex-direction: column;
+    gap: 50px;
   }
   .feature-img img {
     width: 100%;
   }
   .experience-badge {
-    width: 280px;
+    width: 90%;
     position: static;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  }
+  .experience-badge h2 {
+    font-size: 2.5rem;
+  }
+  .experience-badge p {
+    font-size: 1.5rem;
+  }
+
+  /* facts section styles */
+
+  .facts-card-container {
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  /* sponsors section styles */
+
+  .sponsors {
+    margin-top: 100px;
+  }
+  .sponsors-img-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* footer section styles */
+
+  footer {
+    margin-bottom: 100px;
   }
 }
 
-/* tablet or medium devices */
+/* tablet or medium to large devices */
 
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 641px) and (max-width: 1280px) {
+  
   /* header section styles */
 
   header {
-    padding: 50px;
+    padding: 40px;
   }
 
   /* nav related styles */
@@ -80,6 +110,10 @@
   .nav-title {
     margin-bottom: 50px;
   }
+  nav > ul {
+    gap: 40px;
+    padding: 0px;
+  }
 
   /* banner related styles */
 
@@ -87,28 +121,21 @@
     margin-top: 80px;
   }
 
+  /* main section styles */
+
+  main,
+  footer {
+    width: 100%;
+  }
+
   /* teams section styles */
 
   .teams-container {
     flex-direction: column;
-    margin: 20px;
+    margin-top: 50px;
   }
-
-  /* facts related styles */
-
-  .facts-card-container {
-    display: block;
-  }
-  .facts-card-container .card {
-    margin-bottom: 30px;
-  }
-
-  /* sponsors related styles */
-
-  .sponsors-img-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  .teams-img-container img {
+    width: 100%;
   }
 
   /* features related styles */
@@ -120,6 +147,86 @@
     width: 100%;
   }
   .experience-badge {
-    width: 280px;
+    right: 50px;
+    bottom: 100px;
+  }
+
+  /* facts related styles */
+
+  .facts-card-container {
+    display: block;
+  }
+  .facts-card-container .card {
+    margin-bottom: 50px;
+  }
+
+  /* sponsors related styles */
+
+  .sponsors-img-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  /* footer section styles */
+
+  footer {
+    margin-bottom: 100px;
+  }
+}
+
+/* Large to Extra large devices */
+
+@media screen and (min-width: 1281px) and (max-width: 1536px) {
+
+  /* header section styles */
+
+  header {
+    padding: 80px;
+  }
+
+  /* nav related styles */
+
+  nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    margin-bottom: 70px;
+  }
+  nav > ul {
+    gap: 60px;
+    padding: 0px;
+  }
+
+  /* banner related styles */
+
+  .banner-title {
+    margin-top: 100px;
+  }
+
+  /* main section styles */
+
+  main,
+  footer {
+    width: 100%;
+  }
+
+  /* features related styles */
+
+  .features {
+    flex-direction: column;
+  }
+  .feature-img img {
+    width: 80%;
+  }
+  .experience-badge {
+    right: 70px;
+    bottom: 100px;
+  }
+
+  /* facts related styles */
+
+  .facts-card-container {
+    flex-wrap: wrap;
   }
 }
